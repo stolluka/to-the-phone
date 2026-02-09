@@ -1,0 +1,60 @@
+/* Grundstil */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: #f2e8d5;
+    color: #3b2f1c;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.25),
+            rgba(0,0,0,0.25)
+        ),
+        url("https://images.unsplash.com/photo-1604079628041-94301bb21b91");
+    background-size: cover;
+    background-position: center;
+}
+
+/* MENU */
+.menu {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ACCORDION */
+.accordion-header {
+    width: 100%;
+    background: linear-gradient(135deg, #c4a66a, #a8894d);
+    color: #2b1d0e;
+    border: none;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: linear-gradient(135deg, #d8b877, #b69655);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #f7eddc;
+    border-left: 4px solid #a8894d;
+    padding: 0 20px;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-content p {
+    padding: 20px 0;
+    line-height: 1.6;
+}
