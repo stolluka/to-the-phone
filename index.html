@@ -2,37 +2,45 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Antikes Projekt</title>
+    <title>Antike Erfindungen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HERO / HOMEPAGE (bewusst ohne Text) -->
-    <section class="hero"></section>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-title">Menü</div>
+        <div class="dropdown">
+            <a href="#anleitungen">Anleitungen</a>
+            <a href="#projekt">Projekt</a>
+        </div>
+    </nav>
 
-    <!-- MENU -->
-    <section class="menu">
-        <div class="accordion">
-
-            <button class="accordion-header">Anleitungen</button>
-            <div class="accordion-content">
-                <p>
-                    Hier kannst du später deine Anleitungen einfügen.<br>
-                    Text, Bilder, Listen – alles möglich.
-                </p>
-            </div>
-
-            <button class="accordion-header">Projekt</button>
-            <div class="accordion-content">
-                <p>
-                    Beschreibe hier dein Projekt, die Idee dahinter,
-                    Ziele oder geschichtlichen Bezug zur Antike.
-                </p>
-            </div>
-
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Herzlich Willkommen<br>zu unserer Projektpräsentation</h1>
+            <h2>Von antiken Erfindungen zum Smartphone</h2>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- ANLEITUNGEN -->
+    <section id="anleitungen" class="content">
+        <h3>Anleitungen</h3>
+        <p>
+            Hier kommen später eure Anleitungen rein.
+            Ihr könnt Text, Bilder oder Listen einfügen.
+        </p>
+    </section>
+
+    <!-- PROJEKT -->
+    <section id="projekt" class="content">
+        <h3>Projekt</h3>
+        <p>
+            Hier beschreibt ihr euer Projekt, den Zusammenhang
+            zwischen antiken Erfindungen und moderner Technik.
+        </p>
+    </section>
+
 </body>
 </html>
