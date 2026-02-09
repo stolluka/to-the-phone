@@ -1,4 +1,3 @@
-/* Grundstil */
 body {
     margin: 0;
     font-family: "Georgia", serif;
@@ -6,55 +5,81 @@ body {
     color: #3b2f1c;
 }
 
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #b5965b;
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.dropdown {
+    display: none;
+    margin-top: 10px;
+}
+
+.navbar:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    text-decoration: none;
+    color: #2b1d0e;
+    margin: 8px 0;
+}
+
+.dropdown a:hover {
+    text-decoration: underline;
+}
+
 /* HERO */
 .hero {
     height: 100vh;
     background:
-        linear-gradient(
-            rgba(0,0,0,0.25),
-            rgba(0,0,0,0.25)
-        ),
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url("https://images.unsplash.com/photo-1604079628041-94301bb21b91");
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* MENU */
-.menu {
-    padding: 60px 20px;
+.hero-text {
+    text-align: center;
+    color: #f7eddc;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+/* CONTENT */
+.content {
     max-width: 800px;
     margin: auto;
+    padding: 80px 20px;
 }
 
-/* ACCORDION */
-.accordion-header {
-    width: 100%;
-    background: linear-gradient(135deg, #c4a66a, #a8894d);
-    color: #2b1d0e;
-    border: none;
-    padding: 20px;
-    font-size: 1.4rem;
-    text-align: left;
-    cursor: pointer;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
+.content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.accordion-header:hover {
-    background: linear-gradient(135deg, #d8b877, #b69655);
-}
-
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    background: #f7eddc;
-    border-left: 4px solid #a8894d;
-    padding: 0 20px;
-    transition: max-height 0.4s ease;
-}
-
-.accordion-content p {
-    padding: 20px 0;
-    line-height: 1.6;
-}
